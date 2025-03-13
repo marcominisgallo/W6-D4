@@ -1,0 +1,62 @@
+@import "scss/functions";
+@import "scss/variables";
+
+$b6: 6px;
+$b7: 7px;
+$b8: 8px;
+$b9: 9px;
+$b10: 10px;
+
+$newBorderWidths: (
+  6: $b6,
+  7: $b7,
+  8: $b8,
+  9: $b9,
+  10: $b10,
+);
+
+$border-widths: map-merge($border-widths, $newBorderWidths);
+
+$f7: $font-size-base * 0.9;
+$f8: $font-size-base * 0.8;
+$f9: $font-size-base * 0.7;
+$f10: $font-size-base * 0.6;
+
+$newFontSizes: (
+  7: $f7,
+  8: $f8,
+  9: $f9,
+  10: $f10,
+);
+
+$font-sizes: map-merge($font-sizes, $newFontSizes);
+
+$new-danger: #ff0077;
+$new-info: #00ffea;
+$new-light: #f3eeff;
+$ce1: #5726c3;
+$ce2: #8625a5;
+$ce3: #cb2376;
+
+$newColors: (
+  "danger": $new-danger,
+  "info": $new-info,
+  "light": $new-light,
+  "epicode1": $ce1,
+  "epicode2": $ce2,
+  "epicode3": $ce3,
+);
+
+$theme-colors: map-merge($theme-colors, $newColors);
+
+$xxxl: 1600px;
+$xxxxl: 1800px;
+
+$newBreakpoint: (
+  "3xl": $xxxl,
+  "4xl": $xxxxl,
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $newBreakpoint);
+
+@import "scss/bootstrap.scss";
